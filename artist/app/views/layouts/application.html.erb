@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Artist</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body style="background-color: #ffffff;" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <h4 style="color:white;"><%= link_to 'Green', home_mypage_path %></h4>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><%= link_to 'FLORICULTURE', floricultures_path %></a></li>
+ <li class="active"><%= link_to 'AGRICULTURE', agris_path %></a></li>
+     
+          
+        </ul>
+      
+       
+    </ul>
+  </div>
+</nav>
+<%= yield %>
+</body>
+</html>

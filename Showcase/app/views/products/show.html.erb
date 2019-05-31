@@ -1,0 +1,21 @@
+<div class="container">
+<h1><%= @product.product_name %></h1>
+<div class="col-md-4">
+<img src = "https://cdn3.iconfinder.com/data/icons/ballicons-free/128/box.png" alt="<%= 
+@product.product_name %> ">
+</div>
+<div class="col-md-8">
+<h2>Product Details </h2>
+<div class="well">
+<table class="table table-responsive table-condensed table-striped"> 
+
+<tr><td>Product ID</td><td> <%= @product.id %></td></tr>
+<tr><td>Product Name</td><td> <%= @product.product_name %></td></tr>
+<tr><td>Product Description</td><td> <%= @product.product_description %></td></tr>
+<tr><td>Product Price</td><td>  <%= @product.product_price %></td></tr>
+<tr><td>Product Category</td><td> <%= @category.category_name %></td></tr>
+<tr><td>Product Brand</td><td> <%= @brand.brand_name %></td></tr>
+</table>
+</div>
+</div>
+</div>

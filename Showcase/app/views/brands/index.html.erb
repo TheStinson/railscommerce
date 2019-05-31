@@ -1,0 +1,15 @@
+<div class="container">
+<h1 align="center">All Brands </h1>
+<% @brands.each do |brand| %>
+<div class="col-md-4">
+<div class="well" align="center">
+	<%= brand.brand_name %><br/>
+		<%=  link_to 'Edit' , edit_brand_path(brand), class: 'btn btn-md btn-success' %>
+
+	<%=  link_to 'View Products' , brand_path(brand), class: 'btn btn-md btn-primary' %>
+</div>
+</div>
+<% end %>
+
+	<%=  link_to 'New Brand' , new_brand_path, class: 'btn btn-md btn-success' %>
+</div>

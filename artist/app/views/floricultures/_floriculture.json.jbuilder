@@ -1,0 +1,2 @@
+json.extract! floriculture, :id, :name, :description, :varieties, :climate, :soil, :seedrate, :season, :fertilizer, :diseases, :created_at, :updated_at
+json.url floriculture_url(floriculture, format: :json)

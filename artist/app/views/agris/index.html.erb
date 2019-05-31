@@ -1,0 +1,12 @@
+<div style="background-color:#FF94DB;"><p id="notice"><%= notice %></p>
+<div class="panel panel-danger">
+<h1>Agriculture Crops</h1>
+</div>
+
+    <% @agris.each do |agri| %>
+<h2 style="color:#ffffff"><%= link_to agri.name,agri_path(agri) %></h2>
+         <% end %>
+ 
+
+<%= link_to 'New agriculture', new_agri_path %>
+</div>

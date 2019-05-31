@@ -1,0 +1,32 @@
+<div class="container">
+<div class="col-md-3">
+<h2>Brands</h2>
+<ul class="nav nav-pills nav-stacked">
+<% @brands.each do |brand| %>
+    <li>
+	<%=  link_to brand.brand_name , brand_path(brand) %></li>
+   <% end %>
+  </ul>
+
+<h2>Categories </h2>
+<ul class="nav nav-pills nav-stacked">
+    <% @categories.each do |category| %>
+    <li>
+	<%=  link_to category.category_name, category_path(category) %></li>
+   <% end %>
+  </ul>
+</div>
+<div class="col-md-9" align="center">
+<h1><%= @category.category_name %></h1>
+<% @products.each do |product| %>
+<div class="col-md-4">
+<div class="well">
+<img src = "https://cdn3.iconfinder.com/data/icons/ballicons-free/128/box.png" alt="<%= product.product_name %> ">
+<p>Product Name : <%= product.product_name %></p>
+<p>Product Price : <%= product.product_price %></p>
+<%=  link_to 'View Product' , product_path(product), class: 'btn btn-primary' %>
+</div>
+</div>
+<% end %>
+</div>
+</div>

@@ -1,0 +1,17 @@
+<div class="container">
+
+<h1 align="center">All Categories </h1>
+<% @categories.each do |category| %>
+<div class="col-md-4">
+<div class="well" align="center">
+	<%= category.category_name %><br/>
+	<%=  link_to 'Edit' , edit_category_path(category), class: 'btn btn-md btn-success' %>
+
+	<%=  link_to 'View Products' , category_path(category), class: 'btn btn-md btn-primary' %>
+</div>
+</div>
+<% end %>
+
+	<%=  link_to 'New Category' , new_category_path, class: 'btn btn-md btn-success' %>
+
+</div>

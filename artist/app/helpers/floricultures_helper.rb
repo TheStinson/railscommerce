@@ -1,0 +1,2 @@
+module FloriculturesHelper
+end

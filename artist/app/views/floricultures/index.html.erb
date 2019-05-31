@@ -1,0 +1,13 @@
+<div style="background-color:#3DF0B2">
+<p id="notice"><%= notice %></p>
+<div class="panel panel-danger">
+<h1>Floriculture Crops</h1>
+</div>
+
+    <% @floricultures.each do |floriculture| %>
+<h2 style="color:#ffffff"><%= link_to floriculture.name,floriculture_path(floriculture) %></h2>
+         <% end %>
+ 
+
+<%= link_to 'New FLORICULTURE', new_floriculture_path %>
+</div>

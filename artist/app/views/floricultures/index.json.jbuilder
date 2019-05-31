@@ -1,0 +1,1 @@
+json.array! @floricultures, partial: 'floricultures/floriculture', as: :floriculture

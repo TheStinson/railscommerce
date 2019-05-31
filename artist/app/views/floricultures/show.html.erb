@@ -1,0 +1,48 @@
+<div style="background-color:#47DA47;">
+<p id="notice"><%= notice %></p>
+
+
+
+<div class="panel-heading"><h2>
+  <strong>Name:</strong>
+  <%= @floriculture.name %>
+</h2></div>
+<p>
+  <strong>Description:</strong>
+  <%= @floriculture.description %>
+</p>
+
+<p>
+  <strong>Varieties:</strong>
+  <%= @floriculture.varieties %>
+</p>
+
+<p>
+  <strong>Climate:</strong>
+  <%= @floriculture.climate %>
+</p>
+
+<p>
+  <strong>Soil:</strong>
+  <%= @floriculture.soil %>
+</p>
+
+<p>
+  <strong>Seedrate:</strong>
+  <%= @floriculture.seedrate %>
+</p>
+
+<p>
+  <strong>Fertilizer:</strong>
+  <%= @floriculture.fertilizer %>
+</p>
+
+<p>
+  <strong>Diseases:</strong>
+  <%= @floriculture.diseases %>
+</p>
+<%= image_tag(@floriculture.season ,  height: '250', width: '350' ) %>
+
+<%= link_to 'Edit', edit_floriculture_path(@floriculture) %> |
+<%= link_to 'Back', floricultures_path %>
+</div>
